@@ -1,0 +1,286 @@
+version: "2.0"
+
+stories:
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: affirm
+  steps:
+  - intent: affirm
+  - action: utter_congrats
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+ 
+ #NO ANDA. Pregunta que es scrum y que es una metodologia. Entonces scrum no es metodologia? Scrum no es metoodlogia
+- story: que es scrum
+  steps:
+    - intent: que_es_scrum
+    - action: utter_que_es_scrum
+    - intent: es_una_metodologia
+    - action: utter_es_una_metodologia
+    - intent: es_una_metodologia
+    - action: utter_scrum_no_es_metodologia
+
+ #NO ANDA- Pregunta que es scrum y que es una metodologia. Entonces scrum no es metodologia?  exacto
+- story: que es scrum 4
+  steps:
+    - intent: que_es_scrum
+    - action: utter_que_es_scrum
+    - intent: es_una_metodologia
+    - action: utter_es_una_metodologia
+    - intent: scrum_no_es_una_metodologia
+    - action: utter_affirm
+
+- story: que es scrum 2
+  steps:
+    - intent: que_es_scrum
+    - action: utter_que_es_scrum
+    - intent: es_una_metodologia
+    - action: utter_es_una_metodologia
+    - intent: proceso_scrum
+    - action: utter_proceso_scrum
+
+#ANDA. Pregunta por el proceso scrum
+- story: proceso scrum
+  steps:
+    - intent: proceso_scrum
+    - action: utter_proceso_scrum
+
+#ANDA. Responde a los roles de scrum
+- story: roles
+  steps:
+  - intent: roles
+  - action: utter_roles
+
+#ANDA. Responde a los artefactos de scrum
+- story: artefactos
+  steps:
+  - intent: artefactos
+  - action: utter_artefactos
+
+#ANDA. Pregunta que hace el scrum master
+- story: que hace el scrum master
+  steps:
+  - intent: trabajo_scrum_master
+  - action: utter_trabajo_scrum_master
+
+
+# - story: que hace el product owner
+#   steps:
+#   - intent: trabajo_product_owner
+#   - action: action_trabajo_product_owner
+
+# - story: que hace el desarrollador
+#   steps:
+#   - intent: trabajo_desarrollador
+#   - action: action_trabajo_desarrollador
+
+- story: que es el product backlog
+  steps:
+  - intent: que_es_product_backlog
+  - action: utter_que_es_product_backlog  
+  - intent: affirm
+  - action: utter_diseño_backlog
+
+- story: que es el product backlog 2
+  steps:
+  - intent: que_es_product_backlog
+  - action: utter_que_es_product_backlog  
+  - intent: deny
+
+- story: que es el sprint backlog
+  steps:
+  - intent: que_es_sprint_backlog
+  - action: utter_que_es_sprint_backlog
+
+- story: que es el incremento
+  steps: 
+  - intent: que_es_incremento
+  - action: utter_que_es_incremento
+
+- story: eventos
+  steps: 
+  - intent: eventos
+  - action: utter_eventos
+
+- story: sprint planning
+  steps:
+  - intent: que_es_sprint_planning
+  - action: utter_que_es_sprint_planning
+
+- story: daily meeting
+  steps:
+  - intent: que_es_daily_meeting
+  - action: utter_que_es_daily_meeting
+
+- story: sprint review
+  steps: 
+  - intent: que_es_sprint_review
+  - action: utter_que_es_sprint_review
+
+- story: sprint retrospective
+  steps:
+  - intent: que_es_sprint_retrospective
+  - action: utter_que_es_sprint_retrospective
+
+- story: sprint_grooming
+  steps:
+  - intent: que_es_sprint_grooming
+  - action: utter_que_es_sprint_grooming
+
+- story: user story
+  steps:
+  - intent: que_es_user_story
+  - action: utter_que_es_user_story
+
+- story: epicas
+  steps:
+  - intent: que_es_epica
+  - action: utter_que_es_epica
+
+- story: task
+  steps:
+  - intent: que_es_task
+  - action: utter_que_es_task
+  
+- story: como se hace un backlog
+  steps:
+  - intent: diseño_backlog
+  - action: utter_diseño_backlog
+
+- story: scrum team
+  steps:
+  - intent: scrum_team
+  - action: utter_scrum_team
+
+#=====================================================================
+
+# ACA SE HACEN LAS RE PREGUNTAS, OSEA, CONTESTA CON OTRA DEFINICIÓN 
+
+- story: repetir definición de scrum
+  steps: 
+  - intent: repetir_que_es_scrum
+  - action: utter_repetir_que_es_scrum
+
+- story: repetir roles
+  steps: 
+  - intent: repetir_roles
+  - action: utter_repetir_roles
+
+- story: repetir artefactos
+  steps:
+  - intent: repetir_artefactos
+  - action: utter_repetir_artefactos
+
+- story: repetir eventos
+  steps: 
+  - intent: repetir_eventos
+  - action: utter_repetir_eventos
+
+#=====================================================================================
+
+#ACA LO FELICITA Y LE CONTESTA QUE ESTA BIEN SI HIZO UNA SUPOSICION
+
+#ANDA. Pregunta que hace el scrum mater, da una opcion y el chtabot afirma esa respuesta
+- story: que hace el scrum master 2
+  steps:
+  - intent: trabajo_scrum_master
+  - action: utter_trabajo_scrum_master
+  - intent: trabajo_scrum_master
+  - action: utter_affirm
+
+# ANDAAA. Pregunta que es Scrum, da una respuesta y el chatbot contesta que si es lo que el dijo
+- story: que es scrum 3
+  steps:
+    - intent: que_es_scrum
+    - action: utter_que_es_scrum
+    - intent: que_es_scrum
+    - action: utter_affirm
+
+- story: user story 2
+  steps:
+  - intent: que_es_user_story
+  - action: utter_que_es_user_story
+  - intent: que_es_user_story
+  - action: utter_affirm
+
+- story: epicas 2
+  steps:
+  - intent: que_es_epica
+  - action: utter_que_es_epica
+  - intent: que_es_epica
+  - action: utter_affirm
+
+- story: task 2
+  steps:
+  - intent: que_es_task
+  - action: utter_que_es_task
+  - intent: que_es_task
+  - action: utter_affirm
+
+- story: sprint planning 2
+  steps:
+  - intent: que_es_sprint_planning
+  - action: utter_que_es_sprint_planning
+  - intent: el_sprint_planning_es
+  - action: utter_affirm
+
+- story: daily meeting 2
+  steps:
+  - intent: que_es_daily_meeting
+  - action: utter_que_es_daily_meeting
+  - intent: que_es_daily_meeting
+  - action: utter_affirm
+
+- story: sprint review 2 
+  steps: 
+  - intent: que_es_sprint_review
+  - action: utter_que_es_sprint_review
+  - intent: que_es_sprint_review
+  - action: utter_affirm
+
+- story: sprint retrospective 2
+  steps:
+  - intent: que_es_sprint_retrospective
+  - action: utter_que_es_sprint_retrospective
+  - intent: que_es_sprint_retrospective
+  - action: utter_affirm
+
+- story: sprint_grooming 2
+  steps:
+  - intent: que_es_sprint_grooming
+  - action: utter_que_es_sprint_grooming
+  - intent: que_es_sprint_grooming
+  - action: utter_affirm
+
+- story: que es el sprint backlog 2
+  steps:
+  - intent: que_es_sprint_backlog
+  - action: utter_que_es_sprint_backlog
+  - intent: que_es_sprint_backlog
+  - action: utter_affirm
+
+- story: que es el incremento 2
+  steps: 
+  - intent: que_es_incremento
+  - action: utter_que_es_incremento
+  - intent: que_es_incremento
+  - action: utter_affirm
+
+- story: eventos 2
+  steps: 
+  - intent: eventos
+  - action: utter_eventos
+  - intent: eventos
+  - action: utter_affirm
+
+
+#=======================================================================
+
+#ACA HAGO LOS FLUJOS DE LAS EXPLICACIONES COMPLETASSSSSS

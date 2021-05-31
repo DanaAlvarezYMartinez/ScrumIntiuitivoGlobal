@@ -1,0 +1,182 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - que_es_scrum
+  - que_es_un_framework
+  - roles
+  - artefactos
+  - es_una_metodologia
+  - proceso_scrum
+  - trabajo_scrum_master
+  - trabajo_product_owner
+  - trabajo_desarrollador
+  - que_es_product_backlog
+  - que_es_sprint_backlog
+  - que_es_incremento
+  - que_hacer_etapa
+  - get_rol
+  - eventos
+  - que_es_sprint_planning
+  - que_es_daily_meeting
+  - que_es_sprint_retrospective
+  - que_es_sprint_review
+  - que_es_sprint_grooming
+  - que_es_user_story
+  - que_es_epica
+  - que_es_task
+  - diseño_backlog
+  - scrum_team
+  - repetir_que_es_scrum
+  - repetir_roles
+  - repetir_artefactos
+  - repetir_eventos
+  - no_entiendo
+  - get_tema
+  - scrum_no_es_una_metodologia
+  - el_sprint_planning_es
+
+entities:
+  - etapa
+  - rol
+  - tema
+
+slots:
+  etapa:
+    type: text
+    initial_value: 'None'
+  rol:
+    type: text
+    initial_value: 'None'
+  tema:
+    type: text
+    initial_value: 'None'
+
+# actions:
+#   - action_trabajo_scrum_master
+#   - acction_trabajo_product_owner
+#   - action_trabajo_desarrollador
+#   - action_que_hacer
+#   - action_verificar_rol
+#   - action_get_response
+
+responses:
+  utter_greet:
+  - text: "¡Hola! Estoy aquí para guiarte en el proceso Scrum. ¿En qué puedo ayudarte?"
+  - text: "¡Hola! Estoy aquí para responder las consultas que tengas sobre el proceso Scrum."
+  - text: "¡Buenos dias! Estoy listo para responder preguntas sobre el proceso Scrum."
+
+  utter_goodbye:
+  - text: "¡Adiós!, ante cualquier duda que tengas sobre Scrum ya sabes donde encontrarme."
+  - text: "Hasta luego! no dudes en volver a consultarme si tenes otra duda sobre Scrum."
+  - text: "Hasta pronto! ante cualquier duda que tengas sobre Scrum ya sabes donde encontrarme."
+  - text: "¡Adiós! No olvides volver si tenes otra pregunta."
+
+  utter_que_es_scrum:
+  - text: "Scrum es un framework que brinda un conjunto de eventos, prácticas y roles. Puede tomarse como una guia de pasos a seguir para el desarrollo del software."
+
+  utter_repetir_que_es_scrum:
+  - text: "No hay problema! Scrum es un marco de trabajo que permite el desarrollo colaborativo entre equipos. Anima a los equipos a aprender a través de las experiencias, a autoorganizarse mientras aborda un problema y a reflexionar sobre sus victorias y derrotas para mejorar continuamente."
+
+  utter_roles:
+  - text: "Los tres principales roles de Scrum son Product Owner, Scrum Master y Scrum Team,y en conjunto, son los responsables de cumplir con los objetivos del proyecto."
+  - text: "En Scrum hay tres roles definidos; el Scrum Master, el Product Owner y el Equipo de Desarrollo."
+  - text: "Para optimizar la gestión del personal involucrado, Scrum define tres roles básicos; Product Owner, Scrum Master y Scrum Team"
+
+  utter_repetir_roles:
+    - text: "Claro! Un equipo Scrum suele estar compuesto por grupos de trabajo de entre 3 a 9 miembros del equipo de desarrollo, más el Scrum Master y el Product Owner. Y cada uno de estos roles tiene diferentes responsabilidades"
+
+  utter_artefactos:
+  - text: "Los artefactos son los elementos físicos que se producen como resultado de la aplicación de Scrum. Los principales artefactos en Scrum son: Product Backlog, Sprint Backlog e Incremento aunque existen otros como Definition of Done, Burndown chart o Definition of Ready"
+  - text: "Los artefactos estan pensados para garantizar transparencia dentro del equipo y evitar tener mala comunicación. Los principales artefactos en Scrum son: Product Backlog, Sprint Backlog e Incremento aunque existen otros como Definition of Done, Burndown chart o Definition of Ready"
+  - text: "Los artefactos son los elementos que garantizan la transparencia y el registro de la información fundamental del proceso.  Los principales artefactos en Scrum son: Product Backlog, Sprint Backlog e Incremento aunque existen otros como Definition of Done, Burndown chart o Definition of Ready"
+  - text: "Los artefactos son productos de trabajo tangibles y bien definidos, que las tareas consumen, producen o modifican.  Los principales artefactos en Scrum son: Product Backlog, Sprint Backlog e Incremento aunque existen otros como Definition of Done, Burndown chart o Definition of Ready"
+
+  utter_repetir_artefactos:
+    - text: "Por supuesto! Un artefacto es un producto de trabajo que proporciona una descripción y una definición para productos de trabajo tangibles.  Los principales artefactos en Scrum son: Product Backlog, Sprint Backlog e Incremento aunque existen otros como Definition of Done, Burndown chart o Definition of Ready"
+
+  utter_es_una_metodologia:
+  - text: "Una metodología impone una serie de procesos, ceremonias, documentos, estándares, mientras que Scrum no define como se deben llevar a cabo las cosas, que herramientas o prácticas usar para desarrollar un producto o servicio."
+
+  utter_scrum_no_es_metodologia:
+  - text: "Scrum no es una metodologia porque no hay fórmulas o pasos establecidos a seguir y adoptar. a diferencia de las metologias."
+
+  utter_proceso_scrum:
+  - text: "En Scrum un proyecto se ejecuta en ciclos cortos y fijos llamados iteraciones, cada uno de estos debe dar un resultado completo al final. Se organiza una lista de requisitos a llevar a cabo, los cuales son priorizador por el Product Owner. Las actividades que se llevan a cabo en Scrum son las siguientes: Planificación de la iteración donde se hace la seleccion de requisitos,  Ejecución de la iteración e “Inspección y adaptación” donde se hace una revision de lo trabajado y una retrospectiva de como se trabajó."
+
+  utter_que_es_incremento:
+  - text: "El Incremento es la suma de todos los ítems del Product Backlog (PBIs) completados durante un Sprint y el valor de los incrementos de todos los Sprints pasados."
+  - text: "Un Incremento es la suma de todas las tareas, casos de uso, historias de usuario y cualquier elemento que se haya desarrollado durante el Sprint. Sumado a los Incrementos de los Sprints anteriores"
+
+  utter_eventos:
+  - text: "Scrum define cinco eventos o ceremonias principales para cumplir con el control de sus procesos. Dentro de un Sprint (periodo mínimo para generar valor a través de un incremento determinado) se encuentran el Sprint Planning al comienzo del Sprint, las Daily Scrums todos los dias, un Sprint Review al final del Sprint y un Retrospective para inspeccionar como se trabajó. También se incorporó una reunion de Grooming refinar user stories"
+
+  utter_repetir_eventos:
+  - text: "Seguro! Los eventos de Scrum son bloques de tiempo que pre-definen una duración máxima y tienen por finalidad crear regularidad y consistencia, para evitar la necesidad de reuniones no definidas en Scrum."
+
+  utter_que_es_sprint_planning:
+  - text: "El Sprint Planning es una reunión que se realiza al comienzo de cada Sprint donde participa el equipo Scrum al completo y sirve para inspeccionar el Product Backlog  y para que el equipo de desarrollo seleccione los Product Backlog Items en los que va a trabajar durante el Sprint. "
+
+  utter_que_es_daily_meeting:
+  - text: "El Daily Scrum o Daily Meeting es una reunión diaria de 15 minutos en la que participa exclusivamente el Development Team. Se inspecciona el trabajo avanzado desde el último Daily Scrum y se hace una previsión del trabajo que podría completarse antes del siguiente Daily Scrum."
+  - text: "El Daily Scrum o Daily Meeting es una reunión diaria de 15 minutos fijos, independientemente de la duración del Sprint. Su objetivo es evaluar diariamente el progreso y la tendencia del progreso hasta la finalización del Sprint, sincronizando las actividades y creando un plan para las próximas 24 horas. "
+
+  utter_que_es_sprint_review:
+  - text: "El Sprint Review es la reunión que ocurre al final del Sprint donde el Product Owner y el Develpment Team presentan a los stakeholders el incremento terminado para su inspección y adaptación correspondientes. Se estudia cuál es la situación y se actualiza el Product Backlog con las nuevas condiciones que puedan afectar al negocio."
+
+  utter_que_es_sprint_retrospective:
+  - text: "El retrospective ocurre al final del Sprint, justo después del Sprint Review y su objetivo es reflexionar sobre el último Sprint e identificar posibles mejoras para el próximo."
+
+  utter_que_es_sprint_grooming:
+  - text: "El Sprint Grooming es el refinamiento del Product Backlog, es una práctica recomendada para asegurar que éste siempre esté preparado. Se estima su duración en 2 horas máximo por semana del Sprint."
+
+  utter_que_es_user_story:
+  - text: "Una User Story es una explicación general e informal de un objetivo final escrita desde la perspectiva del usuario final."
+  - text: "es la unidad de trabajo más pequeña en un marco ágil. Es un objetivo final, no una función, expresado desde la perspectiva del usuario final o cliente"
+
+  utter_que_es_epica:
+  - text: "Una Épica es un conjunto de trabajo grande que puede dividirse en historias de usuario en función de las necesidades o solicitudes de los clientes o usuarios finales."
+  - text: "Es una User Story que aún no se ha detallado, es demasiado grande o todavía presenta mucha incertidumbre y, por lo tanto, no se puede transformar en un incremento del producto. Debe dividirse en User Story más pequeñas. "
+
+  utter_que_es_task:
+  - text: "Las tareas son elementos técnicos necesarios para que una User Story se transforme en un incremento del producto: una User Story se descompone en tareas para gestionar y seguir el avance de su ejecución."
+
+  utter_diseño_backlog:
+  - text: "Para el diseño del backlog se siguen lo siguientes pasos: \n 
+  1) En primer lugar, se definen los temas. \n
+  2) Se definen las iniciativas u objetivos comunes relacionado con un tema. \n
+  3) Se definen todas las épicas que se requieren para perseguir ese objetivo en común que hemos marcado en el tema.\n
+  4) Se divide cada épica en User Story. \n
+  5) Se dividen las User Story definidas en el paso anterior en tareas o actividades para ejecutarlas."
+
+  utter_que_es_sprint_backlog:
+   - text: "Este artefacto es un elemento para visualizar el trabajo a realizar durante cada Sprint y está gestionado por el equipo de desarrollo."
+   - text: "El Sprint Backlog  es el conjunto de tareas seleccionadas del product backlog durante el sprint planning para el Sprint actual, es decir, las tareas necesarias para realizar un incremento de producto."
+
+  utter_que_es_product_backlog:
+  - text: "El Product Backlog es un inventario que contiene cualquier tipo de trabajo que haya que hacer en el producto: requerimientos, casos de uso, tareas y dependencias."
+
+  utter_preguntar_tema:
+  - text: "Cuál es el tema que no entendiste?"
+  - text: "Cuál es el tema que necesitas que te explique?"
+  - text: "Qué parte no entendiste?"
+  - text: "Qué tema no entendiste?"
+  - text: "Qué parte queres que te explique devuelta?"
+
+  utter_scrum_team:
+  - text: "Un Scrum Team es una colección de personas (generalmente entre cinco y nueve miembros) que trabajan juntas para entregar los incrementos de producto requeridos"
+
+  utter_trabajo_scrum_master:
+  - text: "El Scrum Master es el responsable de que Scrum sea entendido y bien aplicado dentro de la organización"
+
+  utter_affirm:
+  - text: "Exacto!"
+  - text: "Muy Bien! Ya entendiste"
+  - text: "Exactamente"
+
+  utter_congrats:
+  - text: "Genial!"
+  - text: "Buenisimo, segui asi!"

@@ -1,0 +1,402 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - buenas
+    - hello
+    - hi
+    - hola
+    - holis
+    - buen dia
+    - qué tal?
+    - buenos días
+    - buenos dias
+    - buenas tardes
+    - buenas noches
+
+- intent: goodbye
+  examples: |
+    - adiós
+    - hasta luego
+    - nos vemos luego
+    - hasta pronto
+    - nos vemos más tarde
+    - chau
+    - hasta la próxima
+    - bye
+    - gracias por la explicación chau
+    - gracias adios
+    - gracias ya entendi, chau
+
+- intent: affirm
+  examples: |
+    - sí
+    - si
+    - por supuesto
+    - suena bien
+    - correcto
+    - está bien
+    - enterado
+    - genial
+    - bien
+    - de acuerdo
+    - buenisimo
+    - suficiente
+    - proxima
+    - ya está
+    - listo
+    - ya lo entendi
+    - ya entendi
+    - entendido
+
+- intent: deny
+  examples: |
+    - no
+    - jamás
+    - no lo creo
+    - no creo
+    - no me gusta eso
+    - no me convence
+    - no creo que sea correcto
+    - nada
+    - no me parece
+
+- intent: que_es_scrum
+  examples: |
+    - que es scrum?
+    - o sea que scrum es una guia?
+    - entonces ofrece una idea de como se puede hacer?
+    - entonces el proceso scrum es flexible segun el equipo
+    - entonces el proceso scrum es flexible segun el equipo?
+    - o sea funciona como una guia
+    - en que consiste el proceso scrum?
+
+- intent: roles
+  examples: |
+    - cuales son los roles?
+    - para que son los roles?
+    - que roles hay?
+    - que roles intervienen?
+    - entonces los roles sirven para organizar mejor las tareas?
+    - para que sirven los roles?
+
+- intent: scrum_team
+  examples: |
+    - que es un scrum team? 
+    - que es el scrum team? 
+    - me podes repetir que es el scrum team?
+    - no entendi que es el scrum team
+    - que seria el scrum team?
+    - entonces el scrum team son los que conforman el equipo en si?
+    - entonces el scrum team son las personas que integran el equipo
+    - osea el scrum team es la suma de los roles de scrum
+    - entonces el scrum team es el conjunto de los roles de scrum?
+    - basicamente son todas los roles juntos
+
+- intent: artefactos
+  examples: |
+    - que son los artefactos?
+    - para que sirven los artefactos?
+    - entonces los artefactos son elementos tangibles?
+    - que funcion cumplen los artefactps?
+    - cual es la funcionalidad de los artefactos?
+    - entonces los artefactos sirven para mejorar la comunicación?
+    - cuales son los artefactos de scrum?
+    - cuales son los artefactos?
+    - para que son los artefactos?
+    - entonces los artefactos ayudan a la transparencia?
+
+- intent: scrum_no_es_una_metodologia
+  examples: |
+    - entonces scrum no es una metodologia proque no establece como hacer las cosas?
+    - o sea scrum no es una metodologia porque solo es una guia?
+    - entonces scrum no es una metodologia porque solo ofrece una guia
+    - entonces scrum no es una metodologia?
+    - o sea scrum no es una metodologia
+
+- intent: es_una_metodologia
+  examples: |
+    - entonces una metodologia es mas rigida?
+    - entonces un framework es mas flexible?
+    - o sea que framework y metodologia no son lo mismo? 
+    - o sea que framework y metodologia son diferentes?
+    - que es una metodologia?
+    - una metodologia que es?
+    - una metodologia es rigida no?
+
+- intent: proceso_scrum
+  examples: |
+    - como funciona el proceso?
+    - como es el proceso scrum?
+    - que se hace en el proceso scrum?
+    - como aplico scrum?
+    - como aplicar el proceso scrum?
+    - como funciona scrum?
+    - como es el proceso?
+    - como es el flujo de trabajo?
+    - cual es el flujo de trabajo?
+    - entonces se divide en etapas? 
+    - o sea que el proceso de scrum esta conformado por varias etapas
+
+- intent: trabajo_scrum_master
+  examples: | 
+    - que hace el scrum master?
+    - de que se encarga el scrum master?
+    - que hago si soy scrum master?
+    - que tiene que hacer el scrum master?
+    - o sea que el scrum master es el responsable de que las técnicas Scrum sean aplicadas en la organización
+    - entonces que el scrum master es el responsable de que las técnicas Scrum sean aplicadas en la organización
+    - el Scrum Master tiene ayuda ayuda a adoptar scrum en el equipo?
+    - entonces el Scrum Master tiene como función que todo el equipo entienda Scrum y lo aplique de manera correcta
+    - o sea que el Scrum Master tiene como función que todo el equipo entienda Scrum y lo aplique de manera correcta.
+
+- intent: que_es_product_backlog
+  examples: |
+    - que es el product backlog?
+    - para que sirve el product backlog?
+    - cual es la utilidad del product backlog?
+    - para que es el product backlog?
+    - no entendi bien el product backlog
+    - me podes repetir lo que es el product backlog?
+    - entonces el product backlog son las tareas a realizar?
+    - o sea el product backlog engloba todas las tareas de un proyecto?
+    - entonces el product backlog es una lista de requerimientos del producto?
+    - o sea que el product backlog son todos los requerimientos
+    - basicamente son los requerimietnos del proyecto
+
+- intent: que_es_sprint_backlog
+  examples: |
+    - que es el sprint backlog?
+    - no entendi que es el sprint backlog
+    - para que sirve el sprint backlog?
+    - cual es la utilidad del sprint backlog?
+    - para que es el sprint backlog?  
+    - no entendi bien el sprint backlog
+    - me podes repetir lo que es el sprint backlog?
+    - entonces el sprint backlog grupo de tareas del product backlog que el equipo de desarrollo elige en el sprint planning
+    - o sea el sprint backlog son las tareas elegidas en el sprint planning
+    - entonces sprint planning no cambia durante el sprint, solo se permite cambiar el plan para poder desarrollarlas?
+    - o sea que el sprint backlog debe ser conocido por todo el equipo
+    - basicamente son las tareas seleccionadas para el sprint
+    - entonces el sprint backlog son los PBI que se van a trabajar en el sprint
+
+- intent: incremento
+  examples: |
+    - que es el incremento?
+    - para que sirve el incremento?
+    - cual es la utilidad del incremento?
+    - para que es el incremento?  
+    - no entendi bien el incremento
+    - no entendi que es el incremento
+    - entonces el incremento son todas las tareas realizadas hasta el momento?
+    - o sea que el incremento son los PBI compeltados hasta ahora
+
+- intent: get_rol
+  examples: |
+    - soy [programador]{"entity":"rol", "value":"desarrollador"}
+    - soy [desarrollador]{"entity":"rol", "value":"desarrollador"}
+    - estoy en el [grupo de desarrollo]{"entity":"rol", "value":"desarrollador"}
+    - soy [scrum master]{"entity":"rol", "value":"scrum master"}
+    - soy [product owner]{"entity":"rol", "value":"product owner"}
+    - [programador]{"entity":"rol", "value":"desarrollador"}
+    - [desarrollador]{"entity":"rol", "value":"desarrollador"}
+    - [scrum master]{"entity":"rol", "value":"scrum master"}
+    - [product owner]{"entity":"rol", "value":"product owner"}
+    - [po]{"entity":"rol", "value":"product owner"}
+
+- intent: eventos
+  examples: |
+    - cuales son los eventos?
+    - que eventos hay en scrum?
+    - cuales son las ceremonias en scrum?
+    - que ceremonias hay en scrum?
+    - que eventos o ceremonias hay?
+    - para que son los eventos?
+    - para que son las ceremonias?
+    - entonces los eventos son todas las reuniones que se llevan a cabo en el proceso de scrum?
+    - entonces los eventos son las reuniones
+    - o sea que los eventos serían todas las reuniones, planning, daily y demás
+
+- intent: que_es_sprint_planning
+  examples: |
+    - que es el sprint planning?
+    - para que es el sprint planning?
+    - para que se hace el sprint planning?
+    - para que sirve el sprint planning?
+    - para que se planifica el sprint?
+    - no entendi bien el sprint planning
+    - no entendi que es el sprint planning
+    - me podes repetir lo que es el sprint planning?
+
+- intent: el_sprint_planning_es
+  examples: |
+    - es decir que el sprint planning sirve para definir el objetivo del sprint
+    - o sea que en el sprint planning se definen los objetivos para el sprint
+    - entonces en el sprint planning se fijan los objetivos del sprint?
+    - basicamente se definen los objetivos del sprint
+    - entonces sive para definir el objetivo del sprint/
+
+- intent: que_es_daily_meeting
+  examples: |
+    - que es la daily meeting?
+    - que es la daily scrum?
+    - para que es la daily scrum?
+    - para que se hace la daily meeting?
+    - para que se hace la daily scrum?
+    - para que sirve la daily meeting?
+    - no entendi bien la daily meeting
+    - no entendi que es la daily meeting
+    - me podes repetir lo que es la daily meeting?
+    - entonces basicamente la daily sirve para saber el estado del proyecto?
+    - entonces la daily sirve para que todos esten en la misma pagina?
+    - o sea que la daily sirve para ponerse al dia con el estado de las tareas
+    - o sea que en la daily se crea un plan para como se va a trabajar en el dia
+    - basicamente sirve para sincronizar las actividades del dia
+    - entonces ayuda a que todos sepan el estado del proyecto
+    - o sea que es para que todos esten informados de como vienen las tareas
+    - entonces tambien ayuda a ver si hay bloqueos ademas de saber el estado de las tareas
+
+- intent: que_es_sprint_review
+  examples: |
+    - que es el sprint review?
+    - para que es el sprint review?
+    - para que se hace el sprint review?
+    - para que sirve el sprint review?
+    - para que sirve hacer una retrospectiva al final del sprint?
+    - no entendi bien el sprint review
+    - no entendi que es el sprint review
+    - me podes repetir lo que es el sprint review?
+    - entonces en el sprint review se muestra lo trabajado en el sprint?
+    - basicamente se muestra lo hecho en el sprint
+    - o sea que se hace una demo y se muestra el estado del proyecto?
+    - es decir, se muestra lo que se hizo en el sprint y lo que falta hacer tambien
+
+- intent: que_es_sprint_retrospective
+  examples: |
+    - que es el sprint retrospective?
+    - para que es el sprint retrospective?
+    - para que se hace el sprint retrospective?
+    - para que sirve el sprint retrospective?
+    - me podes repetir lo que es el sprint retrospective?
+    - entonces en el sprint retrospective se reflexiona acerca de como se trabajo?
+    - entonces en el sprint retrospective se ve que se hizo bien, y como mejorar lo que se hizo
+    - o sea que el sprint retrospective sirve para intentar mejorar el desempeño del equipo
+    - basicamente se intenta mejorar para que no vuelva a pasar lo mismo en el proximo sprint
+    - sirve para hacer un repaso de como se trabajó y que hay que merorar
+
+- intent: que_es_sprint_grooming
+  examples: |
+    - que es el grooming?
+    - para que es el grooming?
+    - para que se hace el grooming?
+    - para que se hace el grooming?
+    - para que sirve el grooming?
+    - no entendi bien el grooming
+    - no entendi que es el grooming
+    - me podes repetir lo que es el grooming?
+    - entonces el grooming sirve para refinar cosas que hayan quedado poco detalladas?
+    - osea que en el gooming se detallan tareas no muy claras
+
+- intent: que_es_user_story
+  examples: |
+    - que es son las user stories?
+    - que es una user story?
+    - que hace una user story?
+    - para que sirve una user story?
+    - que es son las historias de usuario?
+    - para que son las user stories?
+    - para que se hacen las user stories?
+    - para que se hacen las historias de usuario?
+    - para que sirve las user stories?
+    - para que sirve las historias de usuario?
+    - las user stories son epicas?
+    - las user stories son tareas tecnicas?
+    - entonces las user story describen un objetivo que se debe cumplir?
+    - entonces las user story narran el objetivo final?
+    - o sea las user story describen que debe hacer el sistema al final?
+    - o sea que las user story son una forma de escribir un PBI
+    - basicamente se dice lo que hay que implementar, pero no el como
+    - es decir que sirven para saber que implementar
+
+- intent: que_es_epica
+  examples: |
+    - que son las épicas?
+    - para que son las épicas?
+    - para que se hacen las épicas?
+    - para que sirve las épicas?
+    - las epicas son historias de usuario?
+    - entonces las epicas son tareas muy grandes?
+    - o sea que las epicas son tareas de las cuales no puedo asegurar nada
+    - entonces las epicas son tareas demasiado inestables para poder calcularlas
+    - es decir que son tareas de las cuales no puedo asumir nada
+    - es decir que son tareas sobre las cuales no puedo hacer una estimación
+
+- intent: que_es_task
+  examples: |
+    - que es son las tareas tecnicas?
+    - que es son las tareas?
+    - para que es son las tareas?
+    - para que se hacen las tareas?
+    - para que sirve las tareas?
+    - las tareas son historias de usuario?
+    - entonces las tareas son la funcionalidad especifica?
+    - o sea que las tareas hablan mas de la implementacion?
+    - osea son las partes que componen a las user story
+
+- intent: diseño_backlog
+  examples: |
+    - como se diseña un backlog?
+    - como es el proceso para diseñar el backlog?
+    - como se diseña el product backlog?
+    - como es el proceso para diseñar el product backlog?
+    - como es el proceso de diseño del backlog del product?
+
+- intent: repetir_que_es_scrum
+  examples: |
+    - me podes repetir la definicion de scrum?
+    - me podes dar otra definicion de scrum?
+    - me podes repetir que es scrum?
+    - me repetis que es scrum?
+    - me decis de vuelta que es scrum?
+    - me explicas de vuelta que es scrum?
+    - me explicas de vuelta que es scrum?
+    - me explicas de nuevo que es scrum?
+    - me decis de nuevo que es scrum?
+
+- intent: repetir_roles
+  examples: |
+    - no entendi bien los roles
+    - no entendi los roles?
+    - me podes repetir que serian los roles?
+    - me repetis cuales son lso roles?
+    - me decis de vuelta los roles?
+    - me explicas de vuelta los roles?
+    - me explicas de vuelta cuales son los roles?
+    - me explicas de nuevo que cuales son los artefactos?
+    - me decis de nuevo los roles?
+
+- intent: repetir_artefactos
+  examples: | 
+    - me podrias repetir los artefactos?
+    - no entendi que serian los artefactos? 
+    - me podes repetir la definicion de artefactos?
+    - me repetis cuales son los artefactos?
+    - me decis de vuelta los artefactos?
+    - me explicas de vuelta los artefactos?
+    - me explicas de vuelta que son los artefcatos?
+    - me explicas de nuevo que son los artefactos?
+    - me decis de nuevo los artefactos?
+
+- intent: repetir_eventos
+  examples: | 
+    - me podrias repetir los eventos?
+    - no entendi que serian los eventos? 
+    - me podes repetir la definicion de eventos?
+    - me repetis cuales son los artefactos?
+    - me decis de vuelta los eventos?
+    - me explicas de vuelta los eventos?
+    - me explicas de vuelta que son los eventos?
+    - me explicas de nuevo que son los eventos?
+    - me decis de nuevo los eventos?
+    
